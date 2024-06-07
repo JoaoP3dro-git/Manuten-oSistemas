@@ -1,9 +1,22 @@
 .productCard {
-    flex-wrap: wrap;
     display:flex;
     flex-direction: column;
     align-items: center;
     width: 600px;
     background-color: rgb(68, 160, 199);
     padding: 10px;
+}
+
+.greenBall {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: rgb(32, 221, 32);
+}
+
+.redBall {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: rgb(221, 32, 32);
 }

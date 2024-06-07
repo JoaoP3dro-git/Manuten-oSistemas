@@ -39,7 +39,7 @@ function App() {
             <div className={style.wrapCards}>
             {produtos.map((item) => {
               return(
-                <Card name={item.name} desc={item.desc} value={item.value} image={item.image} key={item.id} status={item.status} category={item.category}/>
+                <Card {...item}/>
               )
              })}
             </div>
