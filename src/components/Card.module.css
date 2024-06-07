@@ -1,0 +1,9 @@
+.productCard {
+    flex-wrap: wrap;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    background-color: rgb(68, 160, 199);
+    padding: 10px;
+}
