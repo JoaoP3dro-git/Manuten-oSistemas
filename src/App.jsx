@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Card } from './components/Card'
+import { ApiCard } from './components/ApiCard'
 import produtos from './constants/produtos.json'
 import { api } from "./api/rmApi"
 import style from './App.module.css'
@@ -55,7 +56,7 @@ function App() {
             {data.map((item) => { 
              return(
               <div key={item.id}>
-                <Card name={item.name} desc={item.species} value={item.gender} image={item.image} />
+                <ApiCard {...item}/>
                 {/* <button onClick={() => {}}>Info</button> */}
               </div>
               )
