@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { ProductsPage } from './pages/ProductsPages.jsx';
 import { APIPage } from './pages/APIPage.jsx';
 import { MapPage } from './pages/MapPage.jsx';
+import { GraphicPage } from './pages/GraphicPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,13 @@ const router = createBrowserRouter([
     element: 
       <App>
         <MapPage/>
+      </App>,
+  },
+  {
+    path: "/graph",
+    element: 
+      <App>
+        <GraphicPage/>
       </App>,
   },
 ]);
