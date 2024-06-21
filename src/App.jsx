@@ -11,10 +11,11 @@ function App() {
   const [show, setShow] = useState("")
   const [data, setData] = useState([])
   const [page, setPage] = useState("")
+  const [name, setName] = useState("")
   const position = [-25.42494104761025, -49.27224469379518]
 
   useEffect(() => {
-    api.get(`/character/?page=${page}`).then((response) => {
+    api.get(`/character/?page=${page}&name=${name}`).then((response) => {
       if (!response.data.results) {
         console.log("Vazio")
       }
@@ -25,7 +26,7 @@ function App() {
       }
       console.error(error)
     })
-  }, [page])
+  }, [page, name])
 
   return (
     <>
@@ -53,7 +54,7 @@ function App() {
             <h2>Rick and Morty API</h2>
             <div>
               <input type="text" placeholder="1/43" value={page} onChange={(event) => setPage(event.target.value)} />
-              <input type="text" placeholder="Name"/>
+              <input type="text" placeholder="Name" value={name} onChange={(event) => setName(event.target.value)} />
             </div>
             <div className={style.wrapCards}>
               {data.map((item) => {
