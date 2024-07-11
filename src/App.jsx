@@ -7,10 +7,10 @@ function App({children}) {
   return (
     <>
       <div className={style.wrapBtns}>
-        <a className={style.button} href='/'>Produtos</a>
-        <a className={style.button} href='/api'>API</a>
-        <a className={style.button} href='/map'>Map</a>
-        <a className={style.button} href='/graph'>Graph</a>
+        <a className={style.button} href={`/`}>Produtos</a>
+        <a className={style.button} href={`/api`}>API</a>
+        <a className={style.button} href={`/map`}>Map</a>
+        <a className={style.button} href={`/graph`}>Graph</a>
       </div>
       <div className={style.wrapPage}>
         <h1>Exercícios de manutenção</h1>
