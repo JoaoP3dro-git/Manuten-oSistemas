@@ -7,7 +7,7 @@ function App({children}) {
   return (
     <>
       <div className={style.wrapBtns}>
-        <a className={style.button} href={`/`}>Produtos</a>
+        <a className={style.button} href={`/product`}>Produtos</a>
         <a className={style.button} href={`/api`}>API</a>
         <a className={style.button} href={`/map`}>Map</a>
         <a className={style.button} href={`/graph`}>Graph</a>
