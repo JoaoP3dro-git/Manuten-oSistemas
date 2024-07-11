@@ -12,31 +12,23 @@ import { Analytics } from "@vercel/analytics/react";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: 
-      <App>
+    element:
         <ProductsPage/>
-      </App>,
   },
   {
     path: "/api",
     element: 
-      <App>
         <APIPage/>
-      </App>,
   },
   {
     path: "/map",
     element: 
-      <App>
         <MapPage/>
-      </App>,
   },
   {
     path: "/graph",
     element: 
-      <App>
         <GraphicPage/>
-      </App>,
   },
 ]);
 
